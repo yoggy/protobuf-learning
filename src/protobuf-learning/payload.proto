@@ -1,0 +1,14 @@
+message TestPoint {
+  required int32 x = 1;
+  required int32 y = 2;
+}
+
+message TestPolygon {
+  required bool      enable = 1;
+  repeated TestPoint pts    = 2;
+}
+
+message TestImage {
+  required string filename = 1;
+  required bytes  jpeg     = 2;
+}
